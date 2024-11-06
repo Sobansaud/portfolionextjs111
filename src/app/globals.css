@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    color:#fff;
+    background-color: black;
+  }
+}
+
+@layer components{
+  .menuLink{
+    @apply cursor-pointer hover:text-[yellow]
+  }
+  .tags{
+    background-color: blueviolet;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .tags:last-child{
+    margin-right: 0;
+  }
+
+  .tags:nth-child(2){
+    background-color: rgb(74, 95, 120);
+  }
+
+  
+  .tags:nth-child(3){
+    background-color: rgb(150, 150, 68);
+  }
+  
+  
+  .tags:nth-child(4){
+    background-color: rgb(75, 75, 134);
+  }
+  
+  
+ 
+}
+
